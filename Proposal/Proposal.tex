@@ -1,0 +1,95 @@
+\documentclass[final]{siamltex}
+\usepackage{geometry}   % See geometry.pdf to learn the layout
+                        % options.  There are lots.
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{color,amsmath,latexsym,amsfonts,amssymb}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+%-----Extra Formatting Options
+\textheight 9.0truein
+\textwidth 6.5truein
+\addtolength{\topmargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.5in}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{2ex}
+
+%----My Definitions---
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\newcommand{\dt}{\Delta t}
+\newcommand{\R}{\mathrm R}
+\newcommand{\N}{\mathrm N}
+\newcommand{\alfven}{Alfv\'{e}n }
+\newcommand{\sundials}{\normalfont\scshape Sundials}
+\newcommand{\fninety}{\normalfont\scshape Fortran90}
+\newcommand{\kinsol}{\normalfont\scshape KINSol}
+\newcommand{\cvode}{\normalfont\scshape Cvode}
+\newcommand{\openad}{\normalfont\scshape OpenAD}
+\newcommand{\hypre}{\normalfont\scshape Hypre}
+\newcommand{\superlu}{\normalfont\scshape SuperLU}
+\newcommand{\petsc}{\normalfont\scshape PETSc}
+\newcommand{\tao}{\normalfont\scshape TAO}
+\newcommand{\trilinos}{\normalfont\scshape Trilinos}
+\newcommand{\bbeta}{{\bf \beta}}
+\newcommand{\bU}{{\bf U}}
+\newcommand{\tU}{{\tilde{\bf U}}}
+\newcommand{\bV}{{\bf V}}
+\newcommand{\bW}{{\bf W}}
+\newcommand{\bF}{{\bf F}}
+\newcommand{\bG}{{\bf G}}
+\newcommand{\bH}{{\bf H}}
+\newcommand{\bS}{{\bf S}}
+\newcommand{\pt}{\tilde{p}}
+\newcommand{\tbF}{\tilde{\bF}}
+\newcommand{\tbG}{\tilde{\bG}}
+\newcommand{\tbH}{\tilde{\bH}}
+\newcommand{\mI}{{\mathcal I}}
+\newcommand{\mJ}{{\mathcal J}}
+\newcommand{\mR}{{\mathcal R}}
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bB}{{\bf B}}
+
+%----Head Matter-------------------------------------------
+\title{Quantum Algorithms for Numerical Integration} 
+\author{Micah A. Thornton \& Daniel R.~Reynolds\\
+  (Two Semester Project)
+} 
+%\email{mathornton@smu.edu, reynolds@smu.edu}
+%\date{April 10, 2015}
+
+%----Begin Document----------------------------------------
+\begin{document}
+
+\maketitle
+
+\pagestyle{myheadings}
+\thispagestyle{plain}
+\mark{M.A.~Thornton \& D.R.~Reynolds -- Quantum Algos. for Numerical Integration}
+
+
+\section{Introduction}
+\label{sec:intro}
+\input{intro.tex}
+
+\section{Problem Description}
+\label{sec:problem}
+\input{prob.tex}
+
+\section{Solution Approach}
+\label{sec:solvers}
+\input{sol.tex}
+
+\section{Personnel}
+\label{sec:sam}
+\input{per.tex}
+
+%%%%%%%%%%%
+
+\bibliography{ham2015}
+\bibliographystyle{siam}
+
+%%%%%%%%%%%
+
+\end{document}
